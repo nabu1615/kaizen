@@ -66,7 +66,8 @@ table {
   width: 100%;
   display: inline-block;
   padding: 14px 0;
-  position: relative;
+  position: fixed;
+  height: 76px;
   background-color: white; }
   .header .content {
     display: block; }
@@ -109,8 +110,7 @@ table {
       background-color: #010101;
       position: absolute;
       display: block;
-      content: '';
-      transition: all 0.3s; }
+      content: ''; }
   .header .nav {
     display: none;
     font-family: "league_spartanregular";
@@ -120,7 +120,8 @@ table {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #3CD52E; }
+    background-color: #3CD52E;
+    transition: width 250ms ease-out; }
     .header .nav ul {
       position: relative;
       top: 15%; }
@@ -5443,3 +5444,11 @@ body {
 
 h1 {
   font-family: "league_spartanregular"; }
+
+.wrapper {
+  padding-top: 76px; }
+
+.scrolling .header {
+  padding: 0.3125em 0;
+  height: 3.5em;
+  transition: all 0.3s; }
