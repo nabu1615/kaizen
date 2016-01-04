@@ -68,7 +68,8 @@ table {
   padding: 14px 0;
   position: fixed;
   height: 76px;
-  background-color: white; }
+  background-color: white;
+  z-index: 999; }
   .header .content {
     display: block; }
   .header .home-icon {
@@ -76,7 +77,14 @@ table {
     background-size: 100%;
     width: 3em;
     height: 3em;
-    float: left; }
+    float: left;
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .header .home-icon {
+        background-image: url(../images/misc/home-icon-large.svg);
+        width: 10em;
+        height: 3.25em;
+        background-position: center center; } }
   .header .action_mobile {
     cursor: pointer;
     padding: 0 2.1875em;
@@ -85,6 +93,9 @@ table {
     top: 22px;
     z-index: 99;
     right: 1.25em; }
+    @media screen and (min-width: 768px) {
+      .header .action_mobile {
+        display: none; } }
     .header .action_mobile.active span {
       background-color: transparent; }
     .header .action_mobile.active span:before, .header .action_mobile.active span:after {
@@ -105,7 +116,7 @@ table {
     .header .action_mobile span, .header .action_mobile span:before, .header .action_mobile span:after {
       cursor: pointer;
       border-radius: 1px;
-      height: 0.3125em;
+      height: 0.25em;
       width: 2.1875em;
       background-color: #010101;
       position: absolute;
@@ -122,12 +133,37 @@ table {
     left: 0;
     background-color: #3CD52E;
     transition: width 250ms ease-out; }
+    @media screen and (min-width: 768px) {
+      .header .nav {
+        display: block;
+        position: relative;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: white;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        font-family: "proxima-nova";
+        line-height: 2; } }
     .header .nav ul {
       position: relative;
       top: 15%; }
+      @media screen and (min-width: 768px) {
+        .header .nav ul {
+          margin: 0;
+          line-height: 3; } }
       .header .nav ul li {
         display: inline-block;
         width: 100%; }
+        @media screen and (min-width: 768px) {
+          .header .nav ul li {
+            -webkit-flex: auto;
+                -ms-flex: auto;
+                    flex: auto;
+            display: initial;
+            width: auto;
+            padding: 0 0.625em; } }
         .header .nav ul li a {
           color: white;
           display: inherit;
@@ -137,6 +173,11 @@ table {
           font-size: 1.25em;
           text-decoration: none;
           transition: color 250ms ease-out,background 250ms ease-out; }
+          @media screen and (min-width: 768px) {
+            .header .nav ul li a {
+              color: #010101;
+              font-size: 0.8125em;
+              text-transform: uppercase; } }
           .header .nav ul li a:hover {
             background-color: white;
             color: #3CD52E; }
@@ -5435,6 +5476,144 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+@font-face {
+  font-family: 'league_spartanregular';
+  src: url("../fonts/leaguespartan-bold-webfont.eot");
+  src: url("../fonts/leaguespartan-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguespartan-bold-webfont.woff2") format("woff2"), url("../fonts/leaguespartan-bold-webfont.woff") format("woff"), url("../fonts/leaguespartan-bold-webfont.ttf") format("truetype"), url("../fonts/leaguespartan-bold-webfont.svg#league_spartanregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.featured-call .brand {
+  display: block;
+  text-align: center; }
+
+.featured-call .text {
+  padding: 0 1.25em;
+  text-align: center; }
+  .featured-call .text h1 {
+    font-size: 1em;
+    line-height: 1.5625em;
+    margin-top: 10px; }
+
+.featured-call .button {
+  margin: 10px 0; }
+
+.featured-works .item {
+  cursor: pointer;
+  margin-bottom: 7px; }
+  .featured-works .item .image {
+    height: 188px;
+    overflow: hidden;
+    position: relative; }
+    .featured-works .item .image:after {
+      content: "";
+      position: absolute;
+      background-color: rgba(1, 1, 1, 0.5);
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: none; }
+    .featured-works .item .image img {
+      width: 100%;
+      height: inherit;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      transition: all 0.5s; }
+    .featured-works .item .image .top, .featured-works .item .image .bottom {
+      position: absolute;
+      width: 100%;
+      padding: 15px 10px;
+      color: white;
+      transition: all 0.5s;
+      z-index: 99; }
+    .featured-works .item .image .top {
+      top: 0; }
+    .featured-works .item .image .bottom {
+      bottom: 0; }
+  .featured-works .item .type {
+    text-transform: uppercase;
+    font-size: 0.75em; }
+  .featured-works .item .name {
+    font-family: "league_spartanregular";
+    font-size: 1.3125em; }
+  .featured-works .item:hover .top {
+    top: 10px; }
+  .featured-works .item:hover .bottom {
+    bottom: 10px; }
+  .featured-works .item:hover .see-more:after {
+    left: 12px; }
+  .featured-works .item:hover .image img {
+    background-size: 105%; }
+  .featured-works .item:hover .image:after {
+    display: block; }
+
+.team .title {
+  padding: 20px 0; }
+
+.team .text {
+  font-size: 0.875em;
+  padding: 10px 0.9375em;
+  text-align: center; }
+
+.team .item {
+  margin-bottom: 20px; }
+  .team .item .image {
+    margin-bottom: 20px; }
+    .team .item .image img {
+      width: 100%; }
+  .team .item .position, .team .item .name {
+    font-size: 0.875em;
+    display: inline-block;
+    width: 100%;
+    text-align: center; }
+
+.team .social {
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+  .team .social li {
+    font-size: 1.375em;
+    padding: 0 0.125em;
+    display: inline-block; }
+    .team .social li a {
+      display: inherit;
+      text-decoration: none;
+      color: #010101;
+      transition: all 0.5s; }
+      .team .social li a:hover {
+        color: #3CD52E; }
+
+@font-face {
+  font-family: 'league_spartanregular';
+  src: url("../fonts/leaguespartan-bold-webfont.eot");
+  src: url("../fonts/leaguespartan-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguespartan-bold-webfont.woff2") format("woff2"), url("../fonts/leaguespartan-bold-webfont.woff") format("woff"), url("../fonts/leaguespartan-bold-webfont.ttf") format("truetype"), url("../fonts/leaguespartan-bold-webfont.svg#league_spartanregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.testimonials .title {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-family: "league_spartanregular";
+  font-size: 1em; }
+
+.testimonials blockquote {
+  border: none;
+  text-align: center;
+  font-size: 0.875em;
+  padding: 0 2.5em; }
+  .testimonials blockquote:before {
+    width: 29px;
+    height: 24px;
+    padding-right: 0.625em;
+    content: "";
+    display: inline-block;
+    background-image: url(../images/misc/quotes.svg);
+    background-repeat: no-repeat; }
+
+.testimonials .name {
+  padding: 5px 0; }
+
 * {
   box-sizing: border-box; }
 
@@ -5445,10 +5624,77 @@ body {
 h1 {
   font-family: "league_spartanregular"; }
 
+.title {
+  font-size: 1em;
+  font-family: "league_spartanregular";
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+
+.wf-loading {
+  visibility: hidden; }
+
+.wf-active, .wf-inactive {
+  visibility: visible; }
+
 .wrapper {
   padding-top: 76px; }
+
+.wrapp-center {
+  display: block;
+  text-align: center; }
 
 .scrolling .header {
   padding: 0.3125em 0;
   height: 3.5em;
   transition: all 0.3s; }
+  .scrolling .header .home-icon {
+    display: block; }
+
+.button {
+  display: inline-block;
+  font-size: 0.875em;
+  font-family: "league_spartanregular";
+  background-color: rgba(255, 255, 255, 0);
+  border: 0.25em solid;
+  border-color: #3CD52E;
+  color: #3CD52E;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s; }
+  .button:hover {
+    text-decoration: none;
+    background-color: #3CD52E;
+    color: white;
+    border-bottom: 0.25em solid rgba(128, 128, 128, 0.2); }
+
+.see-more {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.75em; }
+  .see-more:after {
+    content: "";
+    background-image: url(../images/misc/see-more-icon.svg);
+    width: 11px;
+    height: 9px;
+    background-size: 100%;
+    display: inline-block;
+    position: relative;
+    left: 2px;
+    transition: all 0.3s; }
+
+.more-works {
+  color: #3CD52E;
+  padding: 20px 0;
+  display: inline-block; }
+  .more-works:hover:after {
+    left: 12px; }
+  .more-works:after {
+    background-image: url(../images/misc/more-works-icon.svg); }
+
+.divider {
+  margin: 0 auto;
+  height: 4px;
+  width: 10%;
+  background: #010101; }

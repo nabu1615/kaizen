@@ -1,0 +1,30 @@
+.team .title {
+  padding: 20px 0; }
+
+.team .text {
+  font-size: em(14);
+  padding: 10px em(15);
+  text-align: center; }
+
+.team .item .image {
+  margin-bottom: 20px; }
+  .team .item .image img {
+    width: 100%; }
+
+.team .item .position, .team .item .name {
+  font-size: em(14);
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+
+.team .social {
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+  .team .social li {
+    font-size: em(22);
+    padding: 0 em(2);
+    display: inline-block; }
+    .team .social li a {
+      display: inherit;
+      text-decoration: none; }

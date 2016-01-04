@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'league_spartanregular';
+  src: url("../fonts/leaguespartan-bold-webfont.eot");
+  src: url("../fonts/leaguespartan-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguespartan-bold-webfont.woff2") format("woff2"), url("../fonts/leaguespartan-bold-webfont.woff") format("woff"), url("../fonts/leaguespartan-bold-webfont.ttf") format("truetype"), url("../fonts/leaguespartan-bold-webfont.svg#league_spartanregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.testimonials .title {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-family: "league_spartanregular";
+  font-size: em(16); }
+
+.testimonials blockquote {
+  border: none;
+  text-align: center;
+  font-size: em(14);
+  padding: 0 em(40); }
+  .testimonials blockquote:before {
+    width: 29px;
+    height: 24px;
+    padding-right: em(10);
+    content: "";
+    display: inline-block;
+    background-image: url(../images/misc/quotes.svg);
+    background-repeat: no-repeat; }
+
+.testimonials .name {
+  padding: 5px 0; }
