@@ -5583,6 +5583,53 @@ button.close {
       .team .social li a:hover {
         color: #3CD52E; }
 
+.collaborators {
+  padding: 0 0 30px 0; }
+  .collaborators .wrapp-items {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 25px; }
+  .collaborators .item {
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto; }
+    .collaborators .item .image {
+      width: 70px;
+      margin: 0 auto;
+      padding-bottom: 10px; }
+      .collaborators .item .image img {
+        width: 100%;
+        border-radius: 100%; }
+    .collaborators .item .name, .collaborators .item .position {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      font-size: 0.8125em;
+      margin-bottom: 5px; }
+
+.services {
+  text-align: center; }
+  .services .image {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 0; }
+    .services .image img {
+      margin: 0 auto; }
+  .services .name {
+    font-size: 0.9375em;
+    padding: 10px 0; }
+  .services .text {
+    padding: 0 1.25em;
+    margin-bottom: 5px; }
+
 @font-face {
   font-family: 'league_spartanregular';
   src: url("../fonts/leaguespartan-bold-webfont.eot");
@@ -5630,6 +5677,15 @@ h1 {
   display: inline-block;
   width: 100%;
   text-align: center; }
+
+.subtitle {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-size: 0.9375em;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin-top: 10px; }
 
 .wf-loading {
   visibility: hidden; }
