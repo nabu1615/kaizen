@@ -87,12 +87,15 @@ table {
         background-position: center center; } }
   .header .action_mobile {
     cursor: pointer;
-    padding: 0 2.1875em;
+    padding: 0;
     float: right;
     position: absolute;
-    top: 22px;
+    top: 0;
     z-index: 99;
-    right: 1.25em; }
+    right: 1.25em;
+    height: 40px;
+    width: 35px;
+    padding-top: 19px; }
     @media screen and (min-width: 768px) {
       .header .action_mobile {
         display: none; } }
@@ -148,7 +151,7 @@ table {
         line-height: 2; } }
     .header .nav ul {
       position: relative;
-      top: 15%; }
+      top: 28%; }
       @media screen and (min-width: 768px) {
         .header .nav ul {
           margin: 0;
@@ -5483,20 +5486,20 @@ button.close {
   font-weight: normal;
   font-style: normal; }
 
-.featured-call .brand {
-  display: block;
-  text-align: center; }
-
-.featured-call .text {
-  padding: 0 1.25em;
-  text-align: center; }
-  .featured-call .text h1 {
-    font-size: 1em;
-    line-height: 1.5625em;
-    margin-top: 10px; }
-
-.featured-call .button {
-  margin: 10px 0; }
+.featured-call {
+  padding-bottom: 30px; }
+  .featured-call .brand {
+    display: block;
+    text-align: center; }
+  .featured-call .text {
+    padding: 0 1.25em;
+    text-align: center; }
+    .featured-call .text h1 {
+      font-size: 1em;
+      line-height: 1.5625em;
+      margin-top: 10px; }
+  .featured-call .button {
+    margin: 10px 0; }
 
 .featured-works .item {
   cursor: pointer;
@@ -5546,6 +5549,13 @@ button.close {
     background-size: 105%; }
   .featured-works .item:hover .image:after {
     display: block; }
+
+@font-face {
+  font-family: 'league_spartanregular';
+  src: url("../fonts/leaguespartan-bold-webfont.eot");
+  src: url("../fonts/leaguespartan-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguespartan-bold-webfont.woff2") format("woff2"), url("../fonts/leaguespartan-bold-webfont.woff") format("woff"), url("../fonts/leaguespartan-bold-webfont.ttf") format("truetype"), url("../fonts/leaguespartan-bold-webfont.svg#league_spartanregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 .team .title {
   padding: 20px 0; }
@@ -5629,6 +5639,161 @@ button.close {
   .services .text {
     padding: 0 1.25em;
     margin-bottom: 5px; }
+
+.technology .wrapp-items {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-top: 30px; }
+
+.technology .item {
+  width: 30%;
+  text-align: center; }
+  .technology .item .image {
+    width: 72px;
+    height: 52px;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    transition: all 0.5s; }
+    .technology .item .image:hover {
+      opacity: .6; }
+  .technology .item .text {
+    padding: 10px 1.375em 10px 1.375em;
+    line-height: 1.2;
+    font-size: 0.875em; }
+
+.start-featured {
+  padding: 30px 0; }
+  .start-featured .item {
+    background-image: url("../images/fpo/thumb-business-hackers.jpg");
+    background-repeat: no-repeat;
+    min-height: 198px;
+    background-size: 100%;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer; }
+    .start-featured .item:hover {
+      background-size: 105%; }
+      .start-featured .item:hover .text span {
+        background-color: white;
+        color: #010101;
+        border-bottom: 4px solid rgba(1, 1, 1, 0.2);
+        padding-bottom: 10px; }
+      .start-featured .item:hover:before {
+        background-color: rgba(1, 1, 1, 0.8); }
+    .start-featured .item:before {
+      content: "";
+      position: absolute;
+      background-color: rgba(1, 1, 1, 0.6);
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: block; }
+    .start-featured .item .text {
+      display: inline-block;
+      position: relative;
+      z-index: 2; }
+      .start-featured .item .text span {
+        color: white;
+        font-family: "league_spartanregular";
+        font-size: 1.25em;
+        border: 4px solid white;
+        padding: 5px 0.9375em;
+        display: inline-block;
+        transition: all 0.2s; }
+
+@font-face {
+  font-family: 'league_spartanregular';
+  src: url("../fonts/leaguespartan-bold-webfont.eot");
+  src: url("../fonts/leaguespartan-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguespartan-bold-webfont.woff2") format("woff2"), url("../fonts/leaguespartan-bold-webfont.woff") format("woff"), url("../fonts/leaguespartan-bold-webfont.ttf") format("truetype"), url("../fonts/leaguespartan-bold-webfont.svg#league_spartanregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.talk {
+  padding-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+  .talk .info {
+    font-size: 0.875em; }
+  .talk .mail {
+    color: #010101; }
+
+footer {
+  background-color: #1E1E1E;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px 0; }
+  footer .social, footer .logo {
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto; }
+  footer .logo {
+    padding: 0 1.25em;
+    transition: all 0.5s; }
+    footer .logo:hover {
+      opacity: .4; }
+  footer .social {
+    text-align: right;
+    position: relative;
+    right: 20px;
+    top: 15px; }
+    footer .social li {
+      display: inline-block;
+      padding: 0 5px; }
+      footer .social li a {
+        color: white;
+        font-size: 1.375em;
+        text-decoration: none;
+        transition: all 0.5s; }
+        footer .social li a:hover {
+          opacity: .4; }
+
+.copyright {
+  display: inline-block;
+  width: 100%;
+  color: white;
+  background-color: #1E1E1E;
+  text-align: center;
+  position: relative;
+  padding: 30px 0;
+  font-size: 0.625em; }
+  .copyright:before {
+    content: "";
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 0;
+    left: 5%; }
 
 @font-face {
   font-family: 'league_spartanregular';

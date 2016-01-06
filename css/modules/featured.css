@@ -5,20 +5,20 @@
   font-weight: normal;
   font-style: normal; }
 
-.featured-call .brand {
-  display: block;
-  text-align: center; }
-
-.featured-call .text {
-  padding: 0 em(20);
-  text-align: center; }
-  .featured-call .text h1 {
-    font-size: em(16);
-    line-height: em(25);
-    margin-top: 10px; }
-
-.featured-call .button {
-  margin: 10px 0; }
+.featured-call {
+  padding-bottom: 30px; }
+  .featured-call .brand {
+    display: block;
+    text-align: center; }
+  .featured-call .text {
+    padding: 0 em(20);
+    text-align: center; }
+    .featured-call .text h1 {
+      font-size: em(16);
+      line-height: em(25);
+      margin-top: 10px; }
+  .featured-call .button {
+    margin: 10px 0; }
 
 .featured-works .item {
   cursor: pointer;

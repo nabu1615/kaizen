@@ -30,12 +30,15 @@
         background-position: center center; } }
   .header .action_mobile {
     cursor: pointer;
-    padding: 0 em(35);
+    padding: 0;
     float: right;
     position: absolute;
-    top: 22px;
+    top: 0;
     z-index: 99;
-    right: em(20); }
+    right: 1.25em;
+    height: 40px;
+    width: 35px;
+    padding-top: 19px; }
     @media screen and (min-width: 768px) {
       .header .action_mobile {
         display: none; } }
@@ -91,7 +94,7 @@
         line-height: 2; } }
     .header .nav ul {
       position: relative;
-      top: 15%; }
+      top: 28%; }
       @media screen and (min-width: 768px) {
         .header .nav ul {
           margin: 0;
