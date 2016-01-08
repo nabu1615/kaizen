@@ -10,6 +10,8 @@
   display: inline-block;
   width: 100%;
   text-align: center; }
+  .talk .subtitle {
+    font-weight: 800; }
   .talk .info {
     font-size: em(14); }
   .talk .mail {

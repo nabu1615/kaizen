@@ -5576,6 +5576,15 @@ button.close {
     display: inline-block;
     width: 100%;
     text-align: center; }
+  .team .item .position {
+    font-weight: 800;
+    display: inline-block;
+    color: #010101;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: all 0.5s; }
+    .team .item .position:hover {
+      color: #3CD52E; }
 
 .team .social {
   display: inline-block;
@@ -5595,6 +5604,8 @@ button.close {
 
 .collaborators {
   padding: 0 0 30px 0; }
+  .collaborators .title {
+    text-transform: capitalize; }
   .collaborators .wrapp-items {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -5623,6 +5634,15 @@ button.close {
       text-align: center;
       font-size: 0.8125em;
       margin-bottom: 5px; }
+    .collaborators .item .position {
+      font-weight: 800;
+      display: inline-block;
+      color: #010101;
+      text-decoration: none;
+      margin-bottom: 10px;
+      transition: all 0.5s; }
+      .collaborators .item .position:hover {
+        color: #3CD52E; }
 
 .services {
   text-align: center; }
@@ -5635,7 +5655,8 @@ button.close {
       margin: 0 auto; }
   .services .name {
     font-size: 0.9375em;
-    padding: 10px 0; }
+    padding: 10px 0;
+    font-weight: 800; }
   .services .text {
     padding: 0 1.25em;
     margin-bottom: 5px; }
@@ -5676,7 +5697,8 @@ button.close {
   .technology .item .text {
     padding: 10px 1.375em 10px 1.375em;
     line-height: 1.2;
-    font-size: 0.875em; }
+    font-size: 0.875em;
+    font-weight: 800; }
 
 .start-featured {
   padding: 30px 0; }
@@ -5740,6 +5762,8 @@ button.close {
   display: inline-block;
   width: 100%;
   text-align: center; }
+  .talk .subtitle {
+    font-weight: 800; }
   .talk .info {
     font-size: 0.875em; }
   .talk .mail {
@@ -5826,6 +5850,14 @@ footer {
 .testimonials .name {
   padding: 5px 0; }
 
+.testimonials .company {
+  font-weight: 800;
+  color: #010101;
+  text-decoration: none;
+  transition: all 0.5s; }
+  .testimonials .company:hover {
+    color: #3CD52E; }
+
 @font-face {
   font-family: 'league_spartanregular';
   src: url("../fonts/leaguespartan-bold-webfont.eot");
@@ -5850,7 +5882,7 @@ footer {
 
 .contact {
   background-color: white;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -5874,15 +5906,17 @@ footer {
     text-transform: uppercase;
     font-weight: 100;
     font-size: 0.75em;
-    padding: 5px 0; }
+    padding: 5px 0;
+    font-weight: 800; }
   .contact fieldset {
-    padding: 5px 0; }
+    padding: 15px 0; }
   .contact input, .contact textarea {
     width: 100%;
     display: inline-block;
     border: none;
     padding: 10px;
-    border-bottom: 1px solid #A3A3A3; }
+    border-bottom: 1px solid #A3A3A3;
+    font-family: "proxima-nova"; }
   .contact .button {
     padding-left: 0.9375em;
     padding-right: 0.9375em;
@@ -5900,7 +5934,8 @@ h1 {
 
 :placeholder-shown {
   color: #B6B6B6;
-  font-size: 0.8125em; }
+  font-size: 0.8125em;
+  font-family: "proxima-nova"; }
 
 .title {
   font-size: 1em;

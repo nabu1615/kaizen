@@ -21,7 +21,6 @@ $(function() {
    $(contactAction).on('click', function(e) {
     e.preventDefault();
     $(contactBox).fadeIn();
-    $(wrapper).fadeOut();
     });
 
    $(contactClose).on('click', function() {

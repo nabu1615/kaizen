@@ -28,3 +28,11 @@
 
 .testimonials .name {
   padding: 5px 0; }
+
+.testimonials .company {
+  font-weight: 800;
+  color: #010101;
+  text-decoration: none;
+  transition: all 0.5s; }
+  .testimonials .company:hover {
+    color: #3CD52E; }
