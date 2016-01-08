@@ -6,7 +6,10 @@ $(function() {
         active = 'active',
         featuredWorkitem = ".featured-works .item .image img",
         featuredWorkimageBox = ".featured-works .item .image",
-        wrapper = $('.wrapper');
+        wrapper = $('.wrapper'),
+        contactAction = $("#contact"),
+        contactClose = $(".contact-close"),
+        contactBox = $(".contact");
 
    $(pull).on('click', function(e) {
     e.preventDefault();
@@ -15,6 +18,15 @@ $(function() {
     $(wrapper).fadeToggle();
     });
 
+   $(contactAction).on('click', function(e) {
+    e.preventDefault();
+    $(contactBox).fadeIn();
+    $(wrapper).fadeOut();
+    });
+
+   $(contactClose).on('click', function() {
+    $(contactBox).fadeOut();
+   });
 
     $(window).scroll(function() {
         if ($(this).scrollTop()>0)
