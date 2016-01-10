@@ -5,7 +5,7 @@
   font-weight: normal;
   font-style: normal; }
 
-.contact-close {
+.form-close {
   width: 21px;
   height: 21px;
   z-index: 99999;
@@ -17,10 +17,36 @@
   right: 15px;
   cursor: pointer;
   transition: all 0.5s; }
-  .contact-close:hover {
+  .form-close:hover {
     opacity: .4; }
 
+.form-error {
+  font-size: em(13);
+  padding: 10px 0;
+  display: inline-block; }
+  .form-error:before {
+    content: "";
+    background-image: url("../images/misc/error-icon.svg");
+    width: 15px;
+    height: 13px;
+    background-size: cover;
+    float: left;
+    margin-right: em(5); }
+
 .contact {
+  display: none; }
+
+.project {
+  display: none; }
+
+.project.form {
+  padding-bottom: 40px;
+  position: relative; }
+
+.box-labels {
+  margin-top: 20px; }
+
+.form {
   background-color: white;
   position: absolute;
   top: 0;
@@ -30,17 +56,126 @@
   width: 100%;
   height: 100%;
   z-index: 9999;
-  padding: 80px em(20);
-  display: none; }
-  .contact .text {
+  padding: 80px em(20); }
+  .form .box-label {
+    width: 50%;
+    float: left;
+    padding: 10px em(10); }
+    .form .box-label:nth-child(odd) {
+      padding-left: 0; }
+    .form .box-label:nth-child(even) {
+      padding-right: 0; }
+  .form .more-services {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    text-decoration: none;
+    height: 145px;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: em(12);
+    padding: 0 em(50);
+    color: #010101;
+    transition: all 0.3s; }
+    .form .more-services:hover {
+      opacity: .4; }
+    .form .more-services:after {
+      content: "";
+      background-image: url(../images/misc/see-more-icon-black.svg);
+      width: 11px;
+      height: 9px;
+      background-size: 100%;
+      display: inline-block;
+      position: relative;
+      left: 90px;
+      bottom: 11px; }
+  .form .check {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgba(163, 163, 163, 0.2);
+    cursor: pointer;
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 145px;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .form .check.active {
+      background: #3CD52E; }
+      .form .check.active span {
+        color: white; }
+      .form .check.active .web {
+        background-image: url("../images/fpo/service-webapp-hover.svg"); }
+      .form .check.active .ecommerce {
+        background-image: url("../images/fpo/service-ecommerce-hover.svg"); }
+      .form .check.active .mobile {
+        background-image: url("../images/fpo/service-mobile-hover.svg"); }
+      .form .check.active .mvp {
+        background-image: url("../images/fpo/service-mvp-hover.svg"); }
+      .form .check.active .product {
+        background-image: url("../images/fpo/service-product-hover.svg"); }
+    .form .check span {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 0; }
+    .form .check input {
+      cursor: pointer;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      border: none;
+      opacity: 0; }
+    .form .check .icon {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin: 0 auto; }
+    .form .check .web {
+      width: 60px;
+      height: 46px;
+      background-image: url("../images/fpo/service-webapp.svg"); }
+    .form .check .ecommerce {
+      width: 60px;
+      height: 46px;
+      background-image: url("../images/fpo/service-ecommerce.svg"); }
+    .form .check .mobile {
+      width: 37px;
+      height: 67px;
+      background-image: url("../images/fpo/service-mobile.svg"); }
+    .form .check .mvp {
+      width: 75px;
+      height: 40px;
+      background-image: url("../images/fpo/service-mvp.svg"); }
+    .form .check .product {
+      width: 75px;
+      height: 40px;
+      background-image: url("../images/fpo/service-product.svg"); }
+  .form .text {
     font-family: "league_spartanregular";
     font-size: em(16);
     line-height: 1.4; }
-    .contact .text span {
+    .form .text span {
       color: #3CD52E; }
-  .contact form {
+  .form form {
     padding-top: 20px; }
-  .contact label {
+  .form label, .form .type-title {
     display: inline-block;
     width: 100%;
     text-transform: uppercase;
@@ -48,16 +183,19 @@
     font-size: em(12);
     padding: 5px 0;
     font-weight: 800; }
-  .contact fieldset {
-    padding: 15px 0; }
-  .contact input, .contact textarea {
+  .form fieldset {
+    padding: 15px 0;
+    width: 100%; }
+  .form .info, .form .type-text {
+    font-size: em(13); }
+  .form input, .form textarea {
     width: 100%;
     display: inline-block;
     border: none;
     padding: 10px;
     border-bottom: 1px solid #A3A3A3;
     font-family: "proxima-nova"; }
-  .contact .button {
+  .form .button {
     padding-left: em(15);
     padding-right: em(15);
     margin-top: 10px; }

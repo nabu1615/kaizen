@@ -225,13 +225,22 @@
         </div>
       </div>
     </div>
-    <div class="contact">
-      <div class="contact-close"></div>
+    <div class="notifications"><a href="" class="close-notifications"><img src="images/misc/close-icon-notifications.svg" alt=""></a>
+      <div class="inner">
+        <div class="image"><img src="images/misc/home-icon-footer.svg" alt=""></div>
+        <p class="text">Thanks for trusting us your idea. We will get in contact with you soon!</p>
+        <div class="wrapp-center">
+          <button class="button">Back</button>
+        </div>
+      </div>
+    </div>
+    <div class="contact form">
+      <div class="form-close"></div>
       <h4 class="text">Get in touch with us, if you have comments, suggestions or compliments. If you want to start a project with us use the <span>project planner.</span></h4>
       <form action="">
         <fieldset>
           <label for="">full name</label>
-          <input type="text" placeholder="Your first name">
+          <input type="text" placeholder="Your first name"><span class="form-error">Por favor, llena este campo para continuar</span>
         </fieldset>
         <fieldset>
           <label for="">email address</label>
@@ -247,6 +256,71 @@
         </fieldset>
         <div class="wrapp-center">
           <button class="button">Send</button>
+        </div>
+      </form>
+    </div>
+    <div class="project form">
+      <div class="form-close"></div>
+      <h4 class="text">Start a project, get a quote or learn more about how we can partner to build a successful product.</h4>
+      <form action="">
+        <fieldset>
+          <label for="">full name</label>
+          <input type="text" placeholder="Your first name">
+        </fieldset>
+        <fieldset>
+          <label for="">email address</label>
+          <input type="mail" placeholder="Your emal address you@example.com">
+        </fieldset>
+        <fieldset>
+          <label for="">phone number</label>
+          <input type="tel" placeholder="Country code + city + phone number">
+        </fieldset>
+        <fieldset>
+          <label for="">organization</label>
+          <input type="text" placeholder="Where you work">
+        </fieldset>
+        <div class="type">
+          <div class="type-title">type of project</div><span class="type-text">select all that apply</span>
+        </div>
+        <div class="box-labels">
+          <div class="box-label">
+            <label class="check">
+              <input type="checkbox" name="checkbox">
+              <div class="web icon"></div><span>web app</span>
+            </label>
+          </div>
+          <div class="box-label">
+            <label class="check">
+              <input type="checkbox" name="checkbox">
+              <div class="ecommerce icon"></div><span>ecommerce</span>
+            </label>
+          </div>
+          <div class="box-label">
+            <label class="check">
+              <input type="checkbox" name="checkbox">
+              <div class="mobile icon"></div><span>mobile</span>
+            </label>
+          </div>
+          <div class="box-label">
+            <label class="check">
+              <input type="checkbox" name="checkbox">
+              <div class="mvp icon"></div><span>mvp</span>
+            </label>
+          </div>
+          <div class="box-label">
+            <label class="check">
+              <input type="checkbox" name="checkbox">
+              <div class="product icon"></div><span>product prototype</span>
+            </label>
+          </div>
+        </div><a href="" class="more-services">more about our services</a>
+        <fieldset>
+          <label for="">ABOUT THE PROJECT</label>
+          <p class="info">Tell us about the project, requirements and objectives.</p>
+          <textarea placeholder="Write a few lines about the project"></textarea>
+        </fieldset>
+        <div class="wrapp-center">
+          <button class="button">Submit a project  </button>
         </div>
       </form>
     </div>
