@@ -5910,6 +5910,236 @@ footer {
   font-weight: normal;
   font-style: normal; }
 
+.works-detail .title {
+  text-align: left;
+  padding: 20px 0.625em; }
+
+.works-detail .text {
+  font-size: 0.8125em;
+  padding-bottom: 10px;
+  padding-right: 0.625em;
+  padding-left: 0.625em; }
+
+.works-detail .wrapp-center {
+  position: relative;
+  bottom: 50px; }
+
+.works-detail .button {
+  padding: 5px 1.25em;
+  text-decoration: none; }
+
+.works-detail .works-slide img {
+  width: 100%; }
+
+.works-detail .bx-viewport {
+  left: 0 !important; }
+
+.works-detail .bx-controls-direction {
+  padding-top: 20px; }
+  .works-detail .bx-controls-direction a {
+    top: initial !important;
+    bottom: -50px;
+    text-indent: initial !important;
+    background-image: none;
+    text-decoration: none;
+    font-size: 0.75em;
+    color: #010101; }
+  .works-detail .bx-controls-direction .bx-prev {
+    width: 50px; }
+    .works-detail .bx-controls-direction .bx-prev:before {
+      content: '';
+      background-image: url("../images/misc/see-more-icon-black.svg");
+      width: 10px;
+      height: 9px;
+      background-size: cover;
+      float: left;
+      position: relative;
+      top: 2px;
+      margin-right: 0.625em;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
+  .works-detail .bx-controls-direction .bx-next {
+    margin-right: 10px; }
+    .works-detail .bx-controls-direction .bx-next:after {
+      content: '';
+      background-image: url("../images/misc/see-more-icon-black.svg");
+      width: 10px;
+      height: 9px;
+      background-size: cover;
+      float: left;
+      position: absolute;
+      top: 2px;
+      margin-left: 0.625em; }
+  .works-detail .bx-controls-direction .bx-next, .works-detail .bx-controls-direction .bx-prev {
+    transition: all 0.5s; }
+    .works-detail .bx-controls-direction .bx-next:hover, .works-detail .bx-controls-direction .bx-prev:hover {
+      opacity: .4; }
+
+.works-detail .bx-default-pager {
+  display: none; }
+
+@font-face {
+  font-family: 'league_spartanregular';
+  src: url("../fonts/leaguespartan-bold-webfont.eot");
+  src: url("../fonts/leaguespartan-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguespartan-bold-webfont.woff2") format("woff2"), url("../fonts/leaguespartan-bold-webfont.woff") format("woff"), url("../fonts/leaguespartan-bold-webfont.ttf") format("truetype"), url("../fonts/leaguespartan-bold-webfont.svg#league_spartanregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.blog .item {
+  padding-bottom: 40px; }
+  .blog .item .title {
+    text-align: left; }
+  .blog .item span {
+    font-size: 0.8125em;
+    color: #868686; }
+  .blog .item .title, .blog .item .info {
+    padding: 0 0.625em; }
+  .blog .item .info {
+    padding-bottom: 10px; }
+    .blog .item .info span.date:after {
+      content: '|';
+      padding: 0 0.3125em; }
+  .blog .item .text {
+    padding: 10px 0.625em;
+    font-size: 0.8125em;
+    line-height: 150%; }
+    .blog .item .text a {
+      text-decoration: none;
+      color: #3CD52E; }
+
+.blog.detail .item {
+  padding-bottom: 0; }
+
+.blog .image img {
+  width: 100%; }
+
+.blog .see-more-black {
+  padding: 0 0.625em; }
+
+.blog .social {
+  margin: 20px 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .blog .social li {
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 10px;
+    transition: all 0.5s;
+    cursor: pointer; }
+    .blog .social li:first-child {
+      margin-right: 0; }
+    .blog .social li.twitter {
+      margin-left: 5px; }
+    .blog .social li a {
+      color: white;
+      text-decoration: none; }
+  .blog .social .facebook {
+    background-color: #3B5999; }
+    .blog .social .facebook:hover {
+      background-color: rgba(59, 89, 153, 0.85); }
+  .blog .social .twitter {
+    background-color: #5FA9DD; }
+    .blog .social .twitter:hover {
+      background-color: rgba(95, 169, 221, 0.85); }
+
+.blog .profile {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0.625em; }
+  .blog .profile .image, .blog .profile .info {
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto; }
+  .blog .profile .image {
+    width: 30%; }
+    .blog .profile .image img {
+      border-radius: 100%; }
+  .blog .profile .info {
+    width: 70%;
+    font-size: 0.8125em;
+    padding: 10px 1.875em; }
+    .blog .profile .info .name, .blog .profile .info .link-twitter {
+      color: #010101;
+      text-decoration: none;
+      font-weight: 800;
+      margin-bottom: 7px;
+      padding: 0;
+      display: inline-block;
+      width: 100%; }
+    .blog .profile .info .possition, .blog .profile .info .company {
+      margin: 0;
+      margin-bottom: 7px; }
+    .blog .profile .info .link-twitter {
+      transition: all 0.5s; }
+      .blog .profile .info .link-twitter:hover {
+        color: #3CD52E; }
+
+.controls {
+  padding: 10px 0.625em;
+  position: relative; }
+  .controls .prev, .controls .next, .controls .numbers {
+    display: inline-block;
+    color: #010101;
+    font-size: 0.75em; }
+  .controls .numbers {
+    width: 59%;
+    text-align: center; }
+    .controls .numbers li {
+      display: inline-block; }
+      .controls .numbers li a {
+        text-decoration: none;
+        color: #010101;
+        padding: 0 0.625em;
+        transition: all 0.5s; }
+        .controls .numbers li a:hover {
+          color: #3CD52E; }
+  .controls .prev, .controls .next {
+    width: 19%;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s;
+    text-transform: uppercase; }
+    .controls .prev:hover, .controls .next:hover {
+      opacity: .4; }
+  .controls .next {
+    text-align: center;
+    position: relative;
+    left: 10px; }
+    .controls .next:after {
+      content: '';
+      background-image: url("../images/misc/see-more-icon-black.svg");
+      width: 10px;
+      height: 9px;
+      background-size: cover;
+      float: left;
+      position: absolute;
+      top: 2px;
+      margin-left: 0.625em; }
+  .controls .prev:before {
+    content: '';
+    background-image: url("../images/misc/see-more-icon-black.svg");
+    width: 10px;
+    height: 9px;
+    background-size: cover;
+    float: left;
+    position: relative;
+    top: 2px;
+    margin-right: 0.625em;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+@font-face {
+  font-family: 'league_spartanregular';
+  src: url("../fonts/leaguespartan-bold-webfont.eot");
+  src: url("../fonts/leaguespartan-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguespartan-bold-webfont.woff2") format("woff2"), url("../fonts/leaguespartan-bold-webfont.woff") format("woff"), url("../fonts/leaguespartan-bold-webfont.ttf") format("truetype"), url("../fonts/leaguespartan-bold-webfont.svg#league_spartanregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .form-close {
   width: 21px;
   height: 21px;
@@ -6187,6 +6417,28 @@ h1 {
     display: inline-block;
     position: relative;
     left: 2px;
+    transition: all 0.3s; }
+
+.see-more-black {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #010101;
+  font-size: 0.75em;
+  transition: all 0.3s; }
+  .see-more-black:hover {
+    color: #3CD52E; }
+    .see-more-black:hover:after {
+      background-image: url(../images/misc/more-works-icon.svg);
+      left: 20px; }
+  .see-more-black:after {
+    content: "";
+    background-image: url(../images/misc/see-more-icon-black.svg);
+    width: 11px;
+    height: 9px;
+    background-size: 100%;
+    display: inline-block;
+    position: relative;
+    left: 5px;
     transition: all 0.3s; }
 
 .more-works {

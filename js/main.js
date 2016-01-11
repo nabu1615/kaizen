@@ -66,5 +66,9 @@ $(function() {
         maxSlides: 1
     });
 
+    $('.works-slide').bxSlider({
+        controls: true
+    });
+
 });
 
