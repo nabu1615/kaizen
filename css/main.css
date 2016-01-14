@@ -5563,7 +5563,8 @@ button.close {
 .team .text {
   font-size: 0.875em;
   padding: 10px 0.9375em;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.3; }
 
 .team .item {
   margin-bottom: 20px; }
@@ -5644,8 +5645,15 @@ button.close {
       .collaborators .item .position:hover {
         color: #3CD52E; }
 
+.wrapp-services {
+  background-color: #FAFAFA;
+  padding: 40px 0; }
+
 .services {
-  text-align: center; }
+  text-align: center;
+  background-color: #FAFAFA; }
+  .services .bx-wrapper .bx-viewport, .services .bx-pager {
+    background-color: #FAFAFA; }
   .services .image {
     width: 100%;
     display: inline-block;
@@ -5658,8 +5666,15 @@ button.close {
     padding: 10px 0;
     font-weight: 800; }
   .services .text {
+    font-size: 0.875em;
     padding: 0 1.25em;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    line-height: 1.3; }
+  .services .bx-controls-direction {
+    display: none; }
+
+.wrapp-technology {
+  padding-top: 30px; }
 
 .technology .wrapp-items {
   display: -webkit-flex;
@@ -5775,7 +5790,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 20px 0; }
+  padding: 40px 0; }
   footer .social, footer .logo {
     -webkit-flex: auto;
         -ms-flex: auto;
@@ -5808,7 +5823,7 @@ footer {
   background-color: #1E1E1E;
   text-align: center;
   position: relative;
-  padding: 30px 0;
+  padding: 30px 0 20px 0;
   font-size: 0.625em; }
   .copyright:before {
     content: "";
@@ -5837,7 +5852,8 @@ footer {
   border: none;
   text-align: center;
   font-size: 0.875em;
-  padding: 0 2.5em; }
+  padding: 0 2.5em;
+  line-height: 1.3; }
   .testimonials blockquote:before {
     width: 29px;
     height: 24px;
@@ -5857,6 +5873,9 @@ footer {
   transition: all 0.5s; }
   .testimonials .company:hover {
     color: #3CD52E; }
+
+.testimonials .bx-controls-direction {
+  display: none; }
 
 @font-face {
   font-family: 'league_spartanregular';
@@ -5915,10 +5934,11 @@ footer {
   padding: 20px 0.625em; }
 
 .works-detail .text {
-  font-size: 0.8125em;
+  font-size: 0.875em;
   padding-bottom: 10px;
   padding-right: 0.625em;
-  padding-left: 0.625em; }
+  padding-left: 0.625em;
+  line-height: 1.3; }
 
 .works-detail .wrapp-center {
   position: relative;
@@ -6172,11 +6192,14 @@ footer {
   display: none; }
 
 .project {
-  display: none; }
+  display: block; }
 
 .project.form {
   padding-bottom: 40px;
   position: relative; }
+
+.box-type {
+  padding-top: 10px; }
 
 .box-labels {
   margin-top: 20px; }
@@ -6195,7 +6218,7 @@ footer {
   .form .box-label {
     width: 50%;
     float: left;
-    padding: 10px 0.625em; }
+    padding: 5px 0.25em; }
     .form .box-label:nth-child(odd) {
       padding-left: 0; }
     .form .box-label:nth-child(even) {
@@ -6306,8 +6329,12 @@ footer {
     font-family: "league_spartanregular";
     font-size: 1em;
     line-height: 1.4; }
-    .form .text span {
-      color: #3CD52E; }
+    .form .text a {
+      color: #3CD52E;
+      text-decoration: none;
+      transition: all 0.3s; }
+      .form .text a:hover {
+        text-decoration: underline; }
   .form form {
     padding-top: 20px; }
   .form label, .form .type-title {
@@ -6365,6 +6392,13 @@ h1 {
   text-transform: uppercase;
   padding: 10px 0;
   margin-top: 10px; }
+
+.link-title {
+  color: #010101; }
+  .link-title .title {
+    transition: all 0.3s; }
+    .link-title .title:hover {
+      color: #3CD52E; }
 
 .wf-loading {
   visibility: hidden; }
@@ -6444,11 +6478,13 @@ h1 {
 .more-works {
   color: #3CD52E;
   padding: 20px 0;
-  display: inline-block; }
+  display: inline-block;
+  font-weight: 800; }
   .more-works:hover:after {
     left: 12px; }
   .more-works:after {
-    background-image: url(../images/misc/more-works-icon.svg); }
+    background-image: url(../images/misc/more-works-icon.svg);
+    left: 5px; }
 
 .divider {
   margin: 0 auto;

@@ -37,11 +37,14 @@
   display: none; }
 
 .project {
-  display: none; }
+  display: block; }
 
 .project.form {
   padding-bottom: 40px;
   position: relative; }
+
+.box-type {
+  padding-top: 10px; }
 
 .box-labels {
   margin-top: 20px; }
@@ -60,7 +63,7 @@
   .form .box-label {
     width: 50%;
     float: left;
-    padding: 10px em(10); }
+    padding: 5px em(4); }
     .form .box-label:nth-child(odd) {
       padding-left: 0; }
     .form .box-label:nth-child(even) {
@@ -171,8 +174,12 @@
     font-family: "league_spartanregular";
     font-size: em(16);
     line-height: 1.4; }
-    .form .text span {
-      color: #3CD52E; }
+    .form .text a {
+      color: #3CD52E;
+      text-decoration: none;
+      transition: all 0.3s; }
+      .form .text a:hover {
+        text-decoration: underline; }
   .form form {
     padding-top: 20px; }
   .form label, .form .type-title {

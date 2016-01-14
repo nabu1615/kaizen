@@ -11,7 +11,8 @@
 .team .text {
   font-size: em(14);
   padding: 10px em(15);
-  text-align: center; }
+  text-align: center;
+  line-height: 1.3; }
 
 .team .item {
   margin-bottom: 20px; }
@@ -92,8 +93,15 @@
       .collaborators .item .position:hover {
         color: #3CD52E; }
 
+.wrapp-services {
+  background-color: #FAFAFA;
+  padding: 40px 0; }
+
 .services {
-  text-align: center; }
+  text-align: center;
+  background-color: #FAFAFA; }
+  .services .bx-wrapper .bx-viewport, .services .bx-pager {
+    background-color: #FAFAFA; }
   .services .image {
     width: 100%;
     display: inline-block;
@@ -106,8 +114,15 @@
     padding: 10px 0;
     font-weight: 800; }
   .services .text {
+    font-size: em(14);
     padding: 0 em(20);
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    line-height: 1.3; }
+  .services .bx-controls-direction {
+    display: none; }
+
+.wrapp-technology {
+  padding-top: 30px; }
 
 .technology .wrapp-items {
   display: -webkit-flex;
