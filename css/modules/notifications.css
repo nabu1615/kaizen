@@ -6,7 +6,6 @@
   font-style: normal; }
 
 .notifications {
-  display: none;
   position: fixed;
   z-index: 9999;
   width: 100%;
@@ -15,11 +14,14 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #3CD52E; }
+  background-color: #3CD52E;
+  text-align: center; }
   .notifications .inner {
     display: inline-block;
     top: 35%;
-    position: absolute; }
+    position: absolute;
+    left: 0;
+    width: 100%; }
   .notifications .text {
     font-family: "league_spartanregular";
     color: white;

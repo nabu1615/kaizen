@@ -15,6 +15,9 @@
   z-index: 999; }
   .header .content {
     display: block; }
+  @media screen and (min-width: 768px) {
+    .header #blog {
+      display: none; } }
   .header .home-icon {
     background-image: url(../images/misc/home-icon-small.svg);
     background-size: 100%;
@@ -27,7 +30,8 @@
         background-image: url(../images/misc/home-icon-large.svg);
         width: em(160);
         height: em(52);
-        background-position: center center; } }
+        background-position: center center;
+        display: block; } }
   .header .action_mobile {
     cursor: pointer;
     padding: 0;

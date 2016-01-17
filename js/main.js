@@ -32,9 +32,17 @@ $(function() {
    });
 
     $(window).scroll(function() {
-        if ($(this).scrollTop()>0)
+        if ($(this).scrollTop()>0 && windowWidth < 768)
         {
             $(homeIcon).fadeIn();
+            $('body').addClass("scrolling");
+        }
+        else if ($(this).scrollTop() === 0 && windowWidth > 768)
+        {
+            $(homeIcon).fadeIn();
+            $('body').removeClass("scrolling");
+        }
+        else if ($(this).scrollTop()>0 && windowWidth > 768) {
             $('body').addClass("scrolling");
         }
         else
@@ -65,6 +73,13 @@ $(function() {
         minSlides: 1,
         maxSlides: 1
     });
+
+    if(windowWidth < 768) {
+        $('#services').bxSlider({
+            minSlides: 1,
+            maxSlides: 1
+        });
+    }
 
     $('.works-slide').bxSlider({
         controls: true

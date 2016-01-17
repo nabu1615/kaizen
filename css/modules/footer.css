@@ -10,6 +10,44 @@
   display: inline-block;
   width: 100%;
   text-align: center; }
+  @media screen and (min-width: 768px) {
+    .talk {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding-bottom: 0; }
+      .talk .content, .talk .image {
+        -webkit-flex: auto;
+            -ms-flex: auto;
+                flex: auto;
+        width: 50%; }
+      .talk .image {
+        background-image: url("../images/fpo/contact.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center; }
+      .talk .content {
+        text-align: left;
+        padding: 0 em(30); }
+        .talk .content .subtitle {
+          text-align: left; }
+      .talk .item {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 0; }
+        .talk .item:first-child {
+          padding-right: em(10);
+          padding-left: em(0); }
+        .talk .item .info {
+          padding-bottom: 20px; } }
+  @media screen and (min-width: 992px) {
+    .talk .item {
+      padding: 40px 0; }
+      .talk .item:first-child {
+        padding-right: em(40);
+        padding-left: em(30); }
+      .talk .item .info {
+        padding-bottom: 20px; } }
   .talk .subtitle {
     font-weight: 800; }
   .talk .info {

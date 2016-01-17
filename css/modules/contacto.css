@@ -36,12 +36,13 @@
 .contact {
   display: none; }
 
-.project {
-  display: block; }
-
 .project.form {
   padding-bottom: 40px;
   position: relative; }
+  @media screen and (min-width: 768px) {
+    .project.form form {
+      width: 60%;
+      margin: 0 auto; } }
 
 .box-type {
   padding-top: 10px; }

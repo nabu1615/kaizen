@@ -13,6 +13,25 @@
   padding: 10px em(15);
   text-align: center;
   line-height: 1.3; }
+  @media screen and (min-width: 768px) {
+    .team .text {
+      padding-bottom: 40px; } }
+  @media screen and (min-width: 992px) {
+    .team .text {
+      padding-bottom: 60px; } }
+
+.team .image-team {
+  padding-bottom: 40px; }
+  .team .image-team img {
+    width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .team .box-members {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .team .box-members .item {
+      padding: 0 em(20); } }
 
 .team .item {
   margin-bottom: 20px; }
@@ -55,6 +74,8 @@
   padding: 0 0 30px 0; }
   .collaborators .title {
     text-transform: capitalize; }
+  .collaborators.medium {
+    text-align: center; }
   .collaborators .wrapp-items {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -66,10 +87,16 @@
         -ms-flex-align: center;
             align-items: center;
     padding-top: 25px; }
+    @media screen and (min-width: 768px) {
+      .collaborators .wrapp-items {
+        display: inline-block; } }
   .collaborators .item {
     -webkit-flex: auto;
         -ms-flex: auto;
             flex: auto; }
+    @media screen and (min-width: 768px) {
+      .collaborators .item {
+        float: left; } }
     .collaborators .item .image {
       width: 70px;
       margin: 0 auto;
@@ -100,6 +127,17 @@
 .services {
   text-align: center;
   background-color: #FAFAFA; }
+  @media screen and (min-width: 768px) {
+    .services ul {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .services .bx-wrapper .bx-viewport, .services .bx-pager {
     background-color: #FAFAFA; }
   .services .image {
@@ -120,6 +158,13 @@
     line-height: 1.3; }
   .services .bx-controls-direction {
     display: none; }
+  @media screen and (min-width: 768px) {
+    .services li {
+      width: 33%;
+      float: left; } }
+  @media screen and (min-width: 992px) {
+    .services li {
+      padding: 0 em(50); } }
 
 .wrapp-technology {
   padding-top: 30px; }
@@ -135,10 +180,17 @@
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   padding-top: 30px; }
+  @media screen and (min-width: 768px) {
+    .technology .wrapp-items {
+      padding: 60px 0; } }
 
 .technology .item {
   width: 30%;
   text-align: center; }
+  @media screen and (min-width: 768px) {
+    .technology .item {
+      width: auto;
+      padding: 0 em(10); } }
   .technology .item .image {
     width: 72px;
     height: 52px;
@@ -165,6 +217,9 @@
 
 .start-featured {
   padding: 30px 0; }
+  @media screen and (min-width: 768px) {
+    .start-featured {
+      padding: 0; } }
   .start-featured .item {
     background-image: url("../images/fpo/thumb-business-hackers.jpg");
     background-repeat: no-repeat;
