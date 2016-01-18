@@ -15,6 +15,9 @@
   width: 100%;
   font-family: "league_spartanregular";
   font-size: em(16); }
+  @media screen and (min-width: 768px) {
+    .testimonials .title {
+      font-size: em(32); } }
 
 .testimonials blockquote {
   border: none;
@@ -22,6 +25,9 @@
   font-size: em(14);
   padding: 0 em(40);
   line-height: 1.3; }
+  @media screen and (min-width: 768px) {
+    .testimonials blockquote {
+      font-size: em(21); } }
   .testimonials blockquote:before {
     width: 29px;
     height: 24px;
@@ -33,12 +39,18 @@
 
 .testimonials .name {
   padding: 5px 0; }
+  @media screen and (min-width: 768px) {
+    .testimonials .name {
+      font-size: 16px; } }
 
 .testimonials .company {
   font-weight: 800;
   color: #010101;
   text-decoration: none;
   transition: all 0.5s; }
+  @media screen and (min-width: 768px) {
+    .testimonials .company {
+      font-size: 16px; } }
   .testimonials .company:hover {
     color: #3CD52E; }
 

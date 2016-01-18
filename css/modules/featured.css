@@ -23,6 +23,9 @@
       font-size: em(16);
       line-height: em(25);
       margin-top: 10px; }
+      @media screen and (min-width: 768px) {
+        .featured-call .text h1 {
+          font-size: em(36); } }
   .featured-call .button {
     margin: 10px 0; }
 
@@ -77,6 +80,9 @@
         color: white;
         transition: all 0.5s;
         z-index: 99; }
+        @media screen and (min-width: 768px) {
+          .featured-works .item .image .top, .featured-works .item .image .bottom {
+            padding: 15px 20px; } }
       .featured-works .item .image .top {
         top: 0; }
       .featured-works .item .image .bottom {
@@ -84,9 +90,15 @@
     .featured-works .item .type {
       text-transform: uppercase;
       font-size: em(12); }
+      @media screen and (min-width: 768px) {
+        .featured-works .item .type {
+          font-size: em(26); } }
     .featured-works .item .name {
       font-family: "league_spartanregular";
       font-size: em(21); }
+      @media screen and (min-width: 768px) {
+        .featured-works .item .name {
+          font-size: em(36); } }
     .featured-works .item:hover .top {
       top: 10px; }
     .featured-works .item:hover .bottom {
