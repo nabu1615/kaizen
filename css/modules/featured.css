@@ -46,12 +46,17 @@
       .featured-works .item {
         margin-bottom: 0; } }
     .featured-works .item .image {
+      width: 100%;
       height: 188px;
       overflow: hidden;
-      position: relative; }
+      position: relative;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      transition: all 0.5s; }
       @media screen and (min-width: 768px) {
         .featured-works .item .image {
-          height: 400px; } }
+          height: 400px;
+          background-size: cover; } }
       .featured-works .item .image:after {
         content: "";
         position: absolute;
@@ -63,16 +68,6 @@
         @media screen and (min-width: 768px) {
           .featured-works .item .image:after {
             background-color: rgba(60, 213, 46, 0.5); } }
-      .featured-works .item .image img {
-        width: 100%;
-        height: inherit;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        transition: all 0.5s;
-        border: 0 !important; }
-        @media screen and (min-width: 768px) {
-          .featured-works .item .image img {
-            background-size: cover; } }
       .featured-works .item .image .top, .featured-works .item .image .bottom {
         position: absolute;
         width: 100%;
@@ -105,10 +100,10 @@
       bottom: 10px; }
     .featured-works .item:hover .see-more:after {
       left: 12px; }
-    .featured-works .item:hover .image img {
+    .featured-works .item:hover .image {
       background-size: 105%; }
       @media screen and (min-width: 768px) {
-        .featured-works .item:hover .image img {
+        .featured-works .item:hover .image {
           background-size: cover; } }
     .featured-works .item:hover .image:after {
       display: block; }

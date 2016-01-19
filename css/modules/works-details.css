@@ -8,6 +8,9 @@
 .works-detail .title {
   text-align: left;
   padding: 20px em(10); }
+  @media screen and (min-width: 768px) {
+    .works-detail .title {
+      font-size: em(36); } }
 
 .works-detail .text {
   font-size: em(14);
@@ -15,6 +18,9 @@
   padding-right: em(10);
   padding-left: em(10);
   line-height: 1.3; }
+  @media screen and (min-width: 768px) {
+    .works-detail .text {
+      font-size: em(18); } }
 
 .works-detail .wrapp-center {
   position: relative;
@@ -42,6 +48,9 @@
     color: #010101; }
   .works-detail .bx-controls-direction .bx-prev {
     width: 50px; }
+    @media screen and (min-width: 768px) {
+      .works-detail .bx-controls-direction .bx-prev {
+        width: 80px; } }
     .works-detail .bx-controls-direction .bx-prev:before {
       content: '';
       background-image: url("../images/misc/see-more-icon-black.svg");
@@ -54,8 +63,15 @@
       margin-right: em(10);
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); }
+      @media screen and (min-width: 768px) {
+        .works-detail .bx-controls-direction .bx-prev:before {
+          top: 5px; } }
   .works-detail .bx-controls-direction .bx-next {
     margin-right: 10px; }
+    @media screen and (min-width: 768px) {
+      .works-detail .bx-controls-direction .bx-next {
+        width: 80px;
+        text-align: center; } }
     .works-detail .bx-controls-direction .bx-next:after {
       content: '';
       background-image: url("../images/misc/see-more-icon-black.svg");
@@ -66,8 +82,14 @@
       position: absolute;
       top: 2px;
       margin-left: em(10); }
+      @media screen and (min-width: 768px) {
+        .works-detail .bx-controls-direction .bx-next:after {
+          top: 5px; } }
   .works-detail .bx-controls-direction .bx-next, .works-detail .bx-controls-direction .bx-prev {
     transition: all 0.5s; }
+    @media screen and (min-width: 768px) {
+      .works-detail .bx-controls-direction .bx-next, .works-detail .bx-controls-direction .bx-prev {
+        font-size: em(19); } }
     .works-detail .bx-controls-direction .bx-next:hover, .works-detail .bx-controls-direction .bx-prev:hover {
       opacity: .4; }
 

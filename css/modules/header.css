@@ -85,11 +85,10 @@
     transition: width 250ms ease-out; }
     @media screen and (min-width: 768px) {
       .header .nav {
-        display: block;
         position: relative;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
         background-color: white;
         -webkit-justify-content: flex-end;
             -ms-flex-pack: end;

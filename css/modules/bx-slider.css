@@ -31,7 +31,7 @@
 /** THEME
 ===================================*/
 .bx-wrapper .bx-viewport {
-  left: -5px;
+  left: 0;
   background: #fff;
   /*fix other elements on the page moving (on Chrome)*/
   -webkit-transform: translatez(0);

@@ -62,6 +62,15 @@ footer {
   display: flex;
   width: 100%;
   padding: 40px 0; }
+  footer .content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      footer .content {
+        width: 80%; } }
   footer .social, footer .logo {
     -webkit-flex: auto;
         -ms-flex: auto;
@@ -73,9 +82,12 @@ footer {
       opacity: .4; }
   footer .social {
     text-align: right;
-    position: relative;
+    position: absolute;
     right: 20px;
-    top: 15px; }
+    top: 15px;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
     footer .social li {
       display: inline-block;
       padding: 0 5px; }
