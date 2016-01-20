@@ -28,6 +28,11 @@
     line-height: 1.8;
     padding: 20px em(20);
     text-align: center; }
+    @media screen and (min-width: 768px) {
+      .notifications .text {
+        font-size: em(36);
+        line-height: 1.4;
+        padding: 20px em(80); } }
   .notifications .close-notifications {
     float: right;
     padding: 20px;
@@ -40,6 +45,9 @@
     text-align: center; }
     .notifications .image img {
       width: 160px; }
+      @media screen and (min-width: 768px) {
+        .notifications .image img {
+          width: 200px; } }
   .notifications .button {
     color: white;
     border-color: white;
