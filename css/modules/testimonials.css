@@ -5,9 +5,9 @@
   font-weight: normal;
   font-style: normal; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 868px) {
   .testimonials {
-    padding: 30px 0; } }
+    padding: 70px 0; } }
 
 .testimonials .title {
   display: inline-block;
@@ -15,7 +15,7 @@
   width: 100%;
   font-family: "league_spartanregular";
   font-size: em(16); }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 868px) {
     .testimonials .title {
       font-size: em(32); } }
 
@@ -25,10 +25,16 @@
   font-size: em(14);
   padding: 0 em(40);
   line-height: 1.3; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 868px) {
     .testimonials blockquote {
-      font-size: em(21); } }
-  .testimonials blockquote:before {
+      font-size: em(21);
+      padding-top: 20px; } }
+  @media screen and (min-width: 868px) {
+    .testimonials blockquote span {
+      padding: 0 em(80);
+      display: inline-block;
+      padding-bottom: 25px; } }
+  .testimonials blockquote span:before {
     width: 29px;
     height: 24px;
     padding-right: em(10);
@@ -36,23 +42,60 @@
     display: inline-block;
     background-image: url(../images/misc/quotes.svg);
     background-repeat: no-repeat; }
+    @media screen and (min-width: 868px) {
+      .testimonials blockquote span:before {
+        width: 69px;
+        height: 44px;
+        background-size: contain;
+        position: absolute;
+        left: 9%;
+        top: 1%; } }
+    @media screen and (min-width: 1400px) {
+      .testimonials blockquote span:before {
+        left: 8%; } }
+  .testimonials blockquote span:after {
+    width: 29px;
+    height: 24px;
+    padding-right: em(0);
+    content: "";
+    display: inline-block;
+    background-image: url(../images/misc/quotes.svg);
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+    @media screen and (min-width: 868px) {
+      .testimonials blockquote span:after {
+        width: 69px;
+        height: 44px;
+        background-size: contain;
+        position: absolute;
+        right: 9%;
+        top: 16%; } }
+    @media screen and (min-width: 1400px) {
+      .testimonials blockquote span:after {
+        right: 8%; } }
 
 .testimonials .name {
   padding: 5px 0; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 868px) {
     .testimonials .name {
-      font-size: 16px; } }
+      font-size: 16px;
+      padding: 0; } }
+
+@media screen and (min-width: 868px) {
+  .testimonials .bx-pager {
+    bottom: -40px !important; } }
 
 .testimonials .company {
   font-weight: 800;
   color: #010101;
   text-decoration: none;
   transition: all 0.5s; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 868px) {
     .testimonials .company {
       font-size: 16px; } }
   .testimonials .company:hover {
     color: #3CD52E; }
 
 .testimonials .bx-controls-direction {
-  display: none; }
+  display: block; }

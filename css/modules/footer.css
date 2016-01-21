@@ -10,7 +10,7 @@
   display: inline-block;
   width: 100%;
   text-align: center; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 868px) {
     .talk {
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -68,7 +68,7 @@ footer {
     display: flex;
     position: relative;
     width: 100%; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 868px) {
       footer .content {
         width: 80%; } }
   footer .social, footer .logo {
@@ -108,7 +108,7 @@ footer {
   position: relative;
   padding: 30px 0 20px 0;
   font-size: em(10); }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 868px) {
     .copyright span {
       text-align: left;
       width: 100%;

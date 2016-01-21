@@ -24,7 +24,7 @@ $(function() {
 
     $(window).resize(function(){
         $(wrapper).fadeIn();
-        if(windowWidth < 768){
+        if(windowWidth < 868){
            $(pull).on('click', function(e) {
                 e.preventDefault();
                 $(wrapper).fadeIn();
@@ -45,17 +45,17 @@ $(function() {
    });
 
     $(window).scroll(function() {
-        if ($(this).scrollTop()>0 && windowWidth < 768)
+        if ($(this).scrollTop()>0 && windowWidth < 868)
         {
             $(homeIcon).fadeIn();
             $('body').addClass("scrolling");
         }
-        else if ($(this).scrollTop() === 0 && windowWidth > 768)
+        else if ($(this).scrollTop() === 0 && windowWidth > 868)
         {
             $(homeIcon).fadeIn();
             $('body').removeClass("scrolling");
         }
-        else if ($(this).scrollTop()>0 && windowWidth > 768) {
+        else if ($(this).scrollTop()>0 && windowWidth > 868) {
             $('body').addClass("scrolling");
         }
         else
@@ -86,7 +86,7 @@ $(function() {
         maxSlides: 1
     });
 
-    if(windowWidth < 768) {
+    if(windowWidth < 868) {
         $('#services').bxSlider({
             minSlides: 1,
             maxSlides: 1
