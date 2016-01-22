@@ -47,7 +47,7 @@
       padding: 40px 0; }
       .talk .item:first-child {
         padding-right: em(60);
-        padding-left: em(0); }
+        padding-left: em(30); }
       .talk .item .info {
         padding-bottom: 20px; } }
   .talk .subtitle {
@@ -64,6 +64,9 @@ footer {
   display: flex;
   width: 100%;
   padding: 40px 0; }
+  @media screen and (min-width: 868px) {
+    footer {
+      padding: 60px 0; } }
   footer .content {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -80,6 +83,9 @@ footer {
   footer .logo {
     padding: 0 em(20);
     transition: all 0.5s; }
+    @media screen and (min-width: 868px) {
+      footer .logo img {
+        width: 180px; } }
     footer .logo:hover {
       opacity: .4; }
   footer .social {
@@ -98,6 +104,9 @@ footer {
         font-size: em(22);
         text-decoration: none;
         transition: all 0.5s; }
+        @media screen and (min-width: 868px) {
+          footer .social li a {
+            font-size: em(30); } }
         footer .social li a:hover {
           opacity: .4; }
 
@@ -111,10 +120,14 @@ footer {
   padding: 30px 0 20px 0;
   font-size: em(10); }
   @media screen and (min-width: 868px) {
+    .copyright {
+      padding: 40px 0; } }
+  @media screen and (min-width: 868px) {
     .copyright span {
       text-align: left;
       width: 100%;
-      display: inline-block; } }
+      display: inline-block;
+      font-size: em(16); } }
   .copyright:before {
     content: "";
     width: 90%;

@@ -9,6 +9,12 @@
   .testimonials {
     padding: 70px 0; } }
 
+.testimonials .bx-controls-direction {
+  visibility: hidden; }
+  @media screen and (min-width: 868px) {
+    .testimonials .bx-controls-direction {
+      visibility: visible; } }
+
 .testimonials .title {
   display: inline-block;
   text-align: center;

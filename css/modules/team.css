@@ -11,6 +11,10 @@
     .team .title {
       font-size: em(32); } }
 
+.team .more-about-us {
+  position: relative;
+  bottom: 40px; }
+
 .team .text {
   font-size: em(14);
   padding: 10px em(15);

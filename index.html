@@ -11,14 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Default Title Here</title>
   </head>
-  <body>
+  <body id="home">
     <header class="header">
-      <div class="content col-sm-12"><a href="" class="home-icon"></a><a href="" class="action_mobile"><span></span></a>
+      <div class="content col-sm-12"><a href="#home" class="home-icon"></a><a href="" class="action_mobile"><span></span></a>
         <nav class="nav">
           <ul>
-            <li><a href="">Our Work</a></li>
-            <li><a href="">Team</a></li>
-            <li><a href="">Services</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#services-box">Services</a></li>
             <li><a href="">Start a project</a></li>
             <li><a href="" id="contact">Contact</a></li>
             <li><a href="">Blog</a></li>
@@ -37,7 +37,7 @@
             <button class="button btn-1">Start a project</button>
           </div>
         </div>
-        <div class="featured-works">
+        <div id="work" class="featured-works">
           <div class="item">
             <div class="image"><img src="images/fpo/thumb-vuelteros.jpg" alt="">
               <div class="content">
@@ -131,12 +131,13 @@
             </li>
           </ul>
         </div>
-        <div class="team">
+        <div id="team" class="team">
           <div class="image-team hide-small"><img src="images/fpo/team-desk.jpg" alt=""></div>
           <div class="divider"></div>
           <div class="content medium">
             <div class="title">Team</div>
             <p class="text">We are a multidisciplinary team speaking the same language: code. We share the same passion: building digital products that transform the world.</p>
+            <div class="wrapp-center hide-mobile more-about-us"><a href="" class="see-more more-works">more about us</a></div>
             <div class="box-members">
               <div class="item">
                 <div class="image"><img src="images/fpo/team-sebas.jpg" alt=""></div>
@@ -183,9 +184,9 @@
             </div>
           </div>
         </div>
-        <div class="wrapp-services">
+        <div id="services-box" class="wrapp-services">
           <div class="divider"></div>
-          <div class="services medium">
+          <div id="services-box" class="services medium">
             <h2 class="title">Our services</h2>
             <ul id="services">
               <li>
