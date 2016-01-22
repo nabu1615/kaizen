@@ -5498,7 +5498,7 @@ button.close {
   padding-bottom: 30px; }
   @media screen and (min-width: 868px) {
     .featured-call {
-      padding: 30px 2.5em 50px 2.5em; } }
+      padding: 30px 2.1875em 50px 2.1875em; } }
   @media screen and (min-width: 1400px) {
     .featured-call {
       padding: 30px 13.75em 60px 13.75em; } }
@@ -5637,11 +5637,11 @@ button.close {
   line-height: 1.3; }
   @media screen and (min-width: 868px) {
     .team .text {
-      padding-bottom: 40px;
+      padding-bottom: 60px;
       font-size: 1.3125em; } }
   @media screen and (min-width: 992px) {
     .team .text {
-      padding-bottom: 60px; } }
+      padding-bottom: 70px; } }
 
 .team .image-team {
   padding-bottom: 40px; }
@@ -5654,7 +5654,11 @@ button.close {
     display: -ms-flexbox;
     display: flex; }
     .team .box-members .item {
-      padding: 0 1.25em; } }
+      padding: 0 1.25em; }
+      .team .box-members .item:first-child {
+        padding-right: 0; }
+      .team .box-members .item:last-child {
+        padding-right: 0; } }
 
 .team .item {
   margin-bottom: 20px; }
@@ -5702,9 +5706,14 @@ button.close {
     text-transform: capitalize; }
     @media screen and (min-width: 868px) {
       .collaborators .title {
-        font-size: 2em; } }
+        font-size: 2em;
+        padding-bottom: 20px; } }
   .collaborators.medium {
     text-align: center; }
+    @media screen and (min-width: 868px) {
+      .collaborators.medium {
+        padding-top: 40px;
+        padding-bottom: 90px; } }
   .collaborators .wrapp-items {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -5730,6 +5739,9 @@ button.close {
       width: 70px;
       margin: 0 auto;
       padding-bottom: 10px; }
+      @media screen and (min-width: 868px) {
+        .collaborators .item .image {
+          width: 100px; } }
       .collaborators .item .image img {
         width: 100%;
         border-radius: 100%; }
@@ -5777,12 +5789,21 @@ button.close {
     display: inline-block;
     text-align: center;
     padding: 15px 0; }
+    @media screen and (min-width: 868px) {
+      .services .image {
+        height: 100px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .services .image img {
+          vertical-align: bottom; } }
     .services .image img {
       margin: 0 auto; }
   .services .name {
     font-size: 0.9375em;
     padding: 10px 0;
-    font-weight: 800; }
+    font-weight: 800;
+    text-transform: uppercase; }
     @media screen and (min-width: 868px) {
       .services .name {
         font-size: 1.1875em; } }
@@ -5793,19 +5814,24 @@ button.close {
     line-height: 1.3; }
   @media screen and (min-width: 868px) {
     .services .title {
-      font-size: 2em; } }
+      font-size: 2em;
+      padding-bottom: 60px; } }
   .services .bx-controls-direction {
     display: none; }
   @media screen and (min-width: 868px) {
     .services li {
       width: 33%;
-      float: left; } }
+      float: left;
+      padding-bottom: 20px; } }
   @media screen and (min-width: 992px) {
     .services li {
       padding: 0 3.125em; } }
 
 .wrapp-technology {
   padding-top: 30px; }
+  @media screen and (min-width: 868px) {
+    .wrapp-technology {
+      padding-top: 60px; } }
 
 .technology .wrapp-items {
   display: -webkit-flex;
@@ -5832,7 +5858,8 @@ button.close {
   @media screen and (min-width: 868px) {
     .technology .item {
       width: auto;
-      padding: 0 0.625em; } }
+      padding: 0 0.625em;
+      margin-bottom: 20px; } }
   .technology .item .image {
     width: 72px;
     height: 52px;
@@ -5885,7 +5912,7 @@ button.close {
     cursor: pointer; }
     @media screen and (min-width: 868px) {
       .start-featured .item {
-        min-height: 250px; } }
+        min-height: 320px; } }
     .start-featured .item:hover {
       background-size: 105%; }
       .start-featured .item:hover .text span {
@@ -5938,11 +5965,13 @@ button.close {
       display: -ms-flexbox;
       display: flex;
       padding-bottom: 0; }
-      .talk .content, .talk .image {
+      .talk .image {
         -webkit-flex: auto;
             -ms-flex: auto;
                 flex: auto;
-        width: 50%; }
+        width: 60%; }
+      .talk .content {
+        width: 40%; }
       .talk .image {
         background-image: url("../images/fpo/contact.jpg");
         background-size: cover;
@@ -5950,7 +5979,7 @@ button.close {
         background-position: center center; }
       .talk .content {
         text-align: left;
-        padding: 0 1.875em; }
+        padding-left: 40px; }
         .talk .content .subtitle {
           text-align: left; }
       .talk .item {
@@ -5966,8 +5995,8 @@ button.close {
     .talk .item {
       padding: 40px 0; }
       .talk .item:first-child {
-        padding-right: 2.5em;
-        padding-left: 1.875em; }
+        padding-right: 3.75em;
+        padding-left: 0em; }
       .talk .item .info {
         padding-bottom: 20px; } }
   .talk .subtitle {
@@ -6865,7 +6894,8 @@ h1 {
   @media screen and (min-width: 868px) {
     .scrolling .header {
       height: auto;
-      padding: 10px 3.125em; }
+      padding: 10px 3.125em;
+      z-index: 99999; }
       .scrolling .header nav {
         margin-top: 5px; } }
   .scrolling .header .home-icon {

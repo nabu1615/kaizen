@@ -9,7 +9,7 @@
   padding-bottom: 30px; }
   @media screen and (min-width: 868px) {
     .featured-call {
-      padding: 30px em(40) 50px em(40); } }
+      padding: 30px em(35) 50px em(35); } }
   @media screen and (min-width: 1400px) {
     .featured-call {
       padding: 30px em(220) 60px em(220); } }

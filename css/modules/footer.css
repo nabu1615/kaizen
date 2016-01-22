@@ -16,11 +16,13 @@
       display: -ms-flexbox;
       display: flex;
       padding-bottom: 0; }
-      .talk .content, .talk .image {
+      .talk .image {
         -webkit-flex: auto;
             -ms-flex: auto;
                 flex: auto;
-        width: 50%; }
+        width: 60%; }
+      .talk .content {
+        width: 40%; }
       .talk .image {
         background-image: url("../images/fpo/contact.jpg");
         background-size: cover;
@@ -28,7 +30,7 @@
         background-position: center center; }
       .talk .content {
         text-align: left;
-        padding: 0 em(30); }
+        padding-left: 40px; }
         .talk .content .subtitle {
           text-align: left; }
       .talk .item {
@@ -44,8 +46,8 @@
     .talk .item {
       padding: 40px 0; }
       .talk .item:first-child {
-        padding-right: em(40);
-        padding-left: em(30); }
+        padding-right: em(60);
+        padding-left: em(0); }
       .talk .item .info {
         padding-bottom: 20px; } }
   .talk .subtitle {
