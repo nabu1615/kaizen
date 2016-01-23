@@ -6495,6 +6495,11 @@ footer {
     width: 100%;
     color: #010101;
     font-weight: bold; }
+  .blog .social span.hide-small {
+    display: none; }
+    @media screen and (min-width: 868px) {
+      .blog .social span.hide-small {
+        display: block; } }
   .blog .social li {
     -webkit-flex: auto;
         -ms-flex: auto;
@@ -7036,7 +7041,7 @@ h1 {
       display: none !important; } }
 
 .hide-small {
-  display: none !important; }
+  display: none; }
   @media screen and (min-width: 868px) {
     .hide-small {
       display: block; } }
