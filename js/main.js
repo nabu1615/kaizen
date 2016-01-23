@@ -22,6 +22,16 @@ $(function() {
         $(wrapper).fadeToggle();
     });
 
+    $(window).resize(function(){
+        $(wrapper).fadeIn();
+        if(windowWidth < 868){
+           $(pull).on('click', function(e) {
+                e.preventDefault();
+                $(wrapper).fadeIn();
+            });
+        }
+    });
+
    $(contactAction).on('click', function(e) {
     e.preventDefault();
     $(contactBox).fadeIn();
@@ -79,12 +89,6 @@ $(function() {
                 $("#services").removeAttr('style');
             }, 10);
             }
-        if(windowWidth < 868){
-            $(homeIcon).hide();
-        } else {
-            $(wrapper).fadeIn();
-            $(homeIcon).fadeIn();
-        }
         });
 
     $(featuredWorkitem).each(function(){
