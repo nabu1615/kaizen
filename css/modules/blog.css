@@ -27,14 +27,30 @@
       text-decoration: none;
       color: #3CD52E; }
 
+@media screen and (min-width: 868px) {
+  .blog.detail .wrapper-blog-interna {
+    width: 80%;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 868px) {
+  .blog.detail .prev {
+    float: left !important; } }
+
+@media screen and (min-width: 868px) {
+  .blog.detail .next {
+    float: right !important; } }
+
+@media screen and (min-width: 868px) {
+  .blog.detail .controls {
+    border-top: 1px solid rgba(128, 128, 128, 0.4) !important;
+    padding: 30px 0;
+    margin-bottom: 80px; } }
+
 .blog.detail .item {
   padding-bottom: 0; }
   @media screen and (min-width: 868px) {
-    .blog.detail .item .image.type1 {
-      position: relative;
-      right: 7%; }
-      .blog.detail .item .image.type1 img {
-        width: 110%; } }
+    .blog.detail .item {
+      padding-top: 40px; } }
   @media screen and (min-width: 868px) {
     .blog.detail .item .image {
       margin: 30px 0; } }
@@ -46,7 +62,11 @@
   @media screen and (min-width: 868px) {
     .blog.detail .item .info, .blog.detail .item .text {
       padding: 10px 0;
-      margin: 0; } }
+      margin: 0 auto;
+      width: 80%;
+      font-size: em(18); } }
+  .blog.detail .item .info {
+    margin: 0; }
 
 .blog .image img {
   width: 100%; }
@@ -64,11 +84,13 @@
     .blog .social {
       display: inline-block;
       width: 50%;
-      float: right; } }
+      float: right;
+      padding-top: 30px; } }
   .blog .social span {
     display: inline-block;
     width: 100%;
-    color: #010101; }
+    color: #010101;
+    font-weight: bold; }
   .blog .social li {
     -webkit-flex: auto;
         -ms-flex: auto;
@@ -108,6 +130,9 @@
   display: -ms-flexbox;
   display: flex;
   padding: 10px em(10); }
+  @media screen and (min-width: 868px) {
+    .blog .profile {
+      padding-top: 40px; } }
   .blog .profile .image, .blog .profile .info {
     -webkit-flex: auto;
         -ms-flex: auto;
@@ -150,9 +175,15 @@
       padding: 0;
       display: inline-block;
       width: 100%; }
+      @media screen and (min-width: 868px) {
+        .blog .profile .info .name, .blog .profile .info .link-twitter {
+          font-size: em(14); } }
     .blog .profile .info .possition, .blog .profile .info .company {
       margin: 0;
       margin-bottom: 7px; }
+      @media screen and (min-width: 868px) {
+        .blog .profile .info .possition, .blog .profile .info .company {
+          font-size: em(14); } }
     .blog .profile .info .link-twitter {
       transition: all 0.5s; }
       .blog .profile .info .link-twitter:hover {

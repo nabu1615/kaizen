@@ -85,15 +85,21 @@
   background: #3CD52E; }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
-.bx-wrapper .bx-prev {
+.testimonials .bx-wrapper .bx-prev {
   left: 10px;
   background: url(../images/fpo/next-slide.svg);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
 
-.bx-wrapper .bx-next {
+.testimonials .bx-wrapper .bx-next {
   right: 10px;
   background: url(../images/fpo/next-slide.svg); }
+
+.bx-wrapper .bx-prev {
+  left: 10px; }
+
+.bx-wrapper .bx-next {
+  right: 10px; }
 
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
