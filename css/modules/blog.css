@@ -5,6 +5,9 @@
   font-weight: normal;
   font-style: normal; }
 
+.blog .controls .prev, .blog .controls .next {
+  width: auto; }
+
 .blog .item {
   padding-bottom: 40px; }
   .blog .item .title {
@@ -99,7 +102,8 @@
     padding: 10px 0;
     margin: 0 10px;
     transition: all 0.5s;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: em(22); }
     @media screen and (min-width: 868px) {
       .blog .social li {
         float: left;
