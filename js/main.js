@@ -23,11 +23,12 @@ $(function() {
     });
 
     $(window).resize(function(){
-        $(wrapper).fadeIn();
+        windowWidth = $(window).width();
+        $(wrapper).show();
         if(windowWidth < 868){
            $(pull).on('click', function(e) {
                 e.preventDefault();
-                $(wrapper).fadeIn();
+                $(wrapper).show();
             });
         }
     });
