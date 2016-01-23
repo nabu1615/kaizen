@@ -5899,6 +5899,7 @@ button.close {
   .start-featured .item {
     background-image: url("../images/fpo/thumb-business-hackers.jpg");
     background-repeat: no-repeat;
+    background-position: center center;
     min-height: 198px;
     background-size: 100%;
     text-align: center;
@@ -5973,9 +5974,7 @@ button.close {
         -webkit-flex: auto;
             -ms-flex: auto;
                 flex: auto;
-        width: 60%; }
-      .talk .content {
-        width: 40%; }
+        width: 55%; }
       .talk .image {
         background-image: url("../images/fpo/contact.jpg");
         background-size: cover;
@@ -5983,7 +5982,9 @@ button.close {
         background-position: center center; }
       .talk .content {
         text-align: left;
-        padding-left: 40px; }
+        padding-left: 40px;
+        padding-top: 10px;
+        width: 45%; }
         .talk .content .subtitle {
           text-align: left; }
       .talk .item {
@@ -5996,8 +5997,11 @@ button.close {
         .talk .item .info {
           padding-bottom: 20px; } }
   @media screen and (min-width: 992px) {
+    .talk .content {
+      padding-top: 50px;
+      padding-bottom: 50px; }
     .talk .item {
-      padding: 40px 0; }
+      padding: 0; }
       .talk .item:first-child {
         padding-right: 3.75em;
         padding-left: 1.875em; }
@@ -6029,6 +6033,9 @@ footer {
     @media screen and (min-width: 868px) {
       footer .content {
         width: 80%; } }
+  @media screen and (min-width: 868px) {
+    footer .content.medium {
+      width: 92%; } }
   footer .social, footer .logo {
     -webkit-flex: auto;
         -ms-flex: auto;
@@ -6405,7 +6412,8 @@ footer {
   width: 100%; }
 
 .blog .see-more-black {
-  padding: 0 0.625em; }
+  padding: 0 0.625em;
+  font-weight: 800; }
 
 .blog .social {
   margin: 20px 0;
@@ -6522,13 +6530,25 @@ footer {
 .controls {
   padding: 10px 0.625em;
   position: relative; }
+  @media screen and (min-width: 868px) {
+    .controls {
+      border-top: 0 !important;
+      text-align: center;
+      padding: 40px 0; } }
   .controls .prev, .controls .next, .controls .numbers {
     display: inline-block;
     color: #010101;
     font-size: 0.75em; }
+    @media screen and (min-width: 868px) {
+      .controls .prev, .controls .next, .controls .numbers {
+        font-size: 1.25em;
+        font-weight: 800; } }
   .controls .numbers {
     width: 59%;
     text-align: center; }
+    @media screen and (min-width: 868px) {
+      .controls .numbers {
+        width: auto; } }
     .controls .numbers li {
       display: inline-block; }
       .controls .numbers li a {
@@ -6544,6 +6564,13 @@ footer {
     position: relative;
     transition: all 0.5s;
     text-transform: uppercase; }
+    @media screen and (min-width: 868px) {
+      .controls .prev, .controls .next {
+        width: auto;
+        float: none !important;
+        padding: 0 1.25em; }
+        .controls .prev:after, .controls .prev:before, .controls .next:after, .controls .next:before {
+          margin-top: 4px; } }
     .controls .prev:hover, .controls .next:hover {
       opacity: .4; }
   .controls .next {
@@ -6588,8 +6615,18 @@ footer {
       -webkit-flex: auto;
           -ms-flex: auto;
               flex: auto;
-      padding: 0 1.25em;
+      padding: 0 0.625em;
       margin-bottom: 30px; }
+      .blog-front .box-items .item .info, .blog-front .box-items .item .text, .blog-front .box-items .item .see-more-black, .blog-front .box-items .item .title {
+        padding-right: 0;
+        padding-left: 0; }
+      .blog-front .box-items .item .text {
+        font-size: 1em;
+        padding-bottom: 30px; }
+      .blog-front .box-items .item .title {
+        font-size: 1.375em; }
+      .blog-front .box-items .item .see-more-black {
+        font-size: 1em; }
       .blog-front .box-items .item:first-child {
         display: inline-block;
         width: 100%;
@@ -6599,9 +6636,15 @@ footer {
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
                 flex-direction: column;
-        margin: 20px 0; }
+        margin: 20px 0;
+        padding-top: 40px;
+        padding-bottom: 30px; }
         .blog-front .box-items .item:first-child .title {
-          margin-top: 0; }
+          margin-top: 0;
+          font-size: 2em;
+          padding: 0; }
+        .blog-front .box-items .item:first-child .text {
+          font-size: 1.25em; }
         .blog-front .box-items .item:first-child .image {
           width: 50%;
           float: left; }

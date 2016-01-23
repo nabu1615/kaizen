@@ -22,16 +22,6 @@ $(function() {
         $(wrapper).fadeToggle();
     });
 
-    $(window).resize(function(){
-        $(wrapper).fadeIn();
-        if(windowWidth < 868){
-           $(pull).on('click', function(e) {
-                e.preventDefault();
-                $(wrapper).fadeIn();
-            });
-        }
-    });
-
    $(contactAction).on('click', function(e) {
     e.preventDefault();
     $(contactBox).fadeIn();
@@ -69,11 +59,33 @@ $(function() {
         $(this).toggleClass("active");
     });
 
-    $(window).resize(function(){
+    $(window).on("resize", function(){
+        windowWidth = $(window).width();
         if(windowWidth > 768 && $(nav).is(':hidden')) {
             $(nav).removeAttr('style');
         }
-    });
+
+        if(windowWidth < 868){
+                bxsliderServices.reloadSlider({
+                    minSlides: 1,
+                    maxSlides: 1
+                });
+            }
+
+        if(windowWidth > 868){
+            bxsliderServices.destroySlider();
+            setTimeout(function(){
+                $("#services li").removeAttr('style');
+                $("#services").removeAttr('style');
+            }, 10);
+            }
+        if(windowWidth < 868){
+            $(homeIcon).hide();
+        } else {
+            $(wrapper).fadeIn();
+            $(homeIcon).fadeIn();
+        }
+        });
 
     $(featuredWorkitem).each(function(){
         var bgImg = $(this).find('img').attr("src");
@@ -86,18 +98,13 @@ $(function() {
         maxSlides: 1
     });
 
-    if(windowWidth < 868) {
-        $('#services').bxSlider({
-            minSlides: 1,
-            maxSlides: 1
-        });
-    }
+    bxsliderServices = $('#services').bxSlider({
+        minSlides: 1,
+        maxSlides: 1
+    });
 
-    if(windowWidth < 768){
-        bxsliderServices = $('#services').bxSlider({
-            minSlides: 1,
-            maxSlides: 1
-        });
+    if(windowWidth > 868){
+        bxsliderServices.destroySlider();
     }
 
 
@@ -123,4 +130,3 @@ $(function() {
     }
 
 });
-

@@ -20,9 +20,7 @@
         -webkit-flex: auto;
             -ms-flex: auto;
                 flex: auto;
-        width: 60%; }
-      .talk .content {
-        width: 40%; }
+        width: 55%; }
       .talk .image {
         background-image: url("../images/fpo/contact.jpg");
         background-size: cover;
@@ -30,7 +28,9 @@
         background-position: center center; }
       .talk .content {
         text-align: left;
-        padding-left: 40px; }
+        padding-left: 40px;
+        padding-top: 10px;
+        width: 45%; }
         .talk .content .subtitle {
           text-align: left; }
       .talk .item {
@@ -43,8 +43,11 @@
         .talk .item .info {
           padding-bottom: 20px; } }
   @media screen and (min-width: 992px) {
+    .talk .content {
+      padding-top: 50px;
+      padding-bottom: 50px; }
     .talk .item {
-      padding: 40px 0; }
+      padding: 0; }
       .talk .item:first-child {
         padding-right: em(60);
         padding-left: em(30); }
@@ -76,6 +79,9 @@ footer {
     @media screen and (min-width: 868px) {
       footer .content {
         width: 80%; } }
+  @media screen and (min-width: 868px) {
+    footer .content.medium {
+      width: 92%; } }
   footer .social, footer .logo {
     -webkit-flex: auto;
         -ms-flex: auto;

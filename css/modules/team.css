@@ -280,6 +280,7 @@
   .start-featured .item {
     background-image: url("../images/fpo/thumb-business-hackers.jpg");
     background-repeat: no-repeat;
+    background-position: center center;
     min-height: 198px;
     background-size: 100%;
     text-align: center;
